@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>고전의서 번역 서재</title>
+<style>
+  @font-face {
+    font-family: "Source Han Serif K";
+    src: url("../assets/fonts/SourceHanSerifKR-Regular.ttf") format("truetype"),
+         url("https://cdn.jsdelivr.net/gh/tw93/Kami@main/assets/fonts/SourceHanSerifKR-Regular.otf") format("opentype");
+    font-weight: 400; font-style: normal;
+  }
+  @font-face {
+    font-family: "Source Han Serif K";
+    src: url("../assets/fonts/SourceHanSerifKR-Medium.ttf") format("truetype"),
+         url("https://cdn.jsdelivr.net/gh/tw93/Kami@main/assets/fonts/SourceHanSerifKR-Medium.otf") format("opentype");
+    font-weight: 500; font-style: normal;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --parchment: #f5f4ed;
+    --ivory:     #faf9f5;
+    --near-black:#141413;
+    --dark-warm: #3d3d3a;
+    --stone:     #6b6a64;
+    --brand:     #1B365D;
+    --border:    #e8e6dc;
+    --tag-bg:    #E4ECF5;
+    --serif: "Source Han Serif K", "Source Han Serif KR", "Noto Serif KR",
+             "Apple SD Gothic Neo", "AppleMyungjo", Charter, Georgia, serif;
+  }
+  html, body { background: var(--parchment); color: var(--dark-warm); font-family: var(--serif); }
+  a { color: var(--brand); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  body { max-width: 960px; margin: 0 auto; padding: 64px 28px 96px; }
+  .site-eyebrow { font-size: 13px; letter-spacing: .12em; color: var(--stone); }
+  h1 { font-size: 30px; font-weight: 500; color: var(--near-black); margin: 10px 0 6px; }
+  .site-desc { color: var(--stone); font-size: 14px; margin-bottom: 44px; }
+  .book-list { display: grid; gap: 16px; }
+  .book-card {
+    display: block; background: var(--ivory); border: 1px solid var(--border);
+    border-radius: 10px; padding: 22px 26px;
+  }
+  a.book-card:hover { text-decoration: none; border-color: var(--brand); }
+  .book-title { font-size: 19px; font-weight: 500; color: var(--near-black); }
+  .book-meta { margin-top: 6px; font-size: 13px; color: var(--stone); }
+  .book-desc { margin-top: 10px; font-size: 14px; color: var(--dark-warm); }
+  .book-tag {
+    display: inline-block; margin-top: 14px; padding: 3px 10px;
+    background: var(--tag-bg); color: var(--brand);
+    border-radius: 999px; font-size: 12px;
+  }
+</style>
+</head>
+<body>
+  <div class="site-eyebrow">TRANSLATED CLASSICS</div>
+  <h1>고전의서 번역 서재</h1>
+  <p class="site-desc">Kami 로 조판된 한국어 번역본 13종. 책을 고르면 좌측 목차로 각 장에 바로 이동할 수 있다.</p>
+  <div class="book-list">
+  <a class="book-card" href="reader-단계심법.html">
+    <div class="book-title">단계심법</div>
+    <div class="book-meta">〔원〕 주진형(朱震亨) 저 · 〔명〕 정충(程充) 교정 · 챕터 15개</div>
+    <div class="book-desc">丹溪心法</div>
+    <span class="book-tag">읽기 &rarr;</span>
+  </a>
+  <a class="book-card" href="reader-삼인극일병증방론.html">
+    <div class="book-title">삼인극일병증방론(三因極一病證方論)</div>
+    <div class="book-meta">진언(陳言) · 챕터 19개</div>
+    <div class="book-desc">남송(南宋) 진언(陳言) 찬술 · 전 18권 328편 1,171조</div>
+    <span class="book-tag">읽기 &rarr;</span>
+  </a>
+  <a class="book-card" href="reader-제병원후론.html">
+    <div class="book-title">제병원후론(諸病源候論)</div>
+    <div class="book-meta">소원방(巢元方) 등 · 챕터 87개</div>
+    <div class="book-desc">수(隋) 태의 소원방(巢元方) 등 찬술 · 전 50권 86편 1,737후</div>
+    <span class="book-tag">읽기 &rarr;</span>
+  </a>
+  <a class="book-card" href="reader-명의기방-2권.html">
+    <div class="book-title">명의기방비술 제2집</div>
+    <div class="book-meta">왕응린 · 챕터 77개</div>
+    <div class="book-desc">명의기방비술 제2집</div>
+    <span class="book-tag">읽기 &rarr;</span>
+  </a>
+  <a class="book-card" href="reader-명의기방-3권.html">
+    <div class="book-title">명의기방비술 제3집</div>
+    <div class="book-meta">중의 임상 경험집 편 · 챕터 28개</div>
+    <div class="book-desc">현대 중의 명의 임상 경험·치험 모음 (텍스트판)</div>
+    <span class="book-tag">읽기 &rarr;</span>
+  </a>
+  <a class="book-card" href="reader-설감변정.html">
+    <div class="book-title">설감변정(舌鑑辨正)</div>
+    <div class="book-meta">량옥유(梁玉瑜) · 챕터 12개</div>
+    <div class="book-desc">청대 량옥유(梁玉瑜)가 전하고 도보렴(陶保廉)이 기록한 한의학 설진(舌診) 전문서로, 149칙의 설태(舌苔) 관찰법과 변증(辨證) 치법을 담았다.</div>
+    <span class="book-tag">읽기 &rarr;</span>
+  </a>
+  <a class="book-card" href="reader-의종금감-01상한론.html">
+    <div class="book-title">의종금감 상한론주</div>
+    <div class="book-meta">〔청〕 오겸(吳謙) 등 찬 · 챕터 26개</div>
+    <div class="book-desc">《》 권1~17 원문에서 새로 옮김</div>
+    <span class="book-tag">읽기 &rarr;</span>
+  </a>
+  <a class="book-card" href="reader-의종금감-02금궤요략.html">
+    <div class="book-title">의종금감 금궤요략주</div>
+    <div class="book-meta">〔청〕 오겸(吳謙) 등 찬 · 챕터 26개</div>
+    <div class="book-desc">사고전서본 《御纂醫宗金鑑》 권18~25 · 원문 신역</div>
+    <span class="book-tag">읽기 &rarr;</span>
+  </a>
+  <a class="book-card" href="reader-의종금감-03명의방론.html">
+    <div class="book-title">의종금감 산보명의방론</div>
+    <div class="book-meta">〔청〕 오겸(吳謙) 등 찬 · 챕터 8개</div>
+    <div class="book-desc">의종금감 산보명의방론</div>
+    <span class="book-tag">읽기 &rarr;</span>
+  </a>
+  <a class="book-card" href="reader-의종금감-04사진심법요결.html">
+    <div class="book-title">의종금감 사진심법요결</div>
+    <div class="book-meta">〔청〕 오겸(吳謙) 등 찬 · 챕터 6개</div>
+    <div class="book-desc">의종금감 사진심법요결</div>
+    <span class="book-tag">읽기 &rarr;</span>
+  </a>
+  <a class="book-card" href="reader-의종금감-05운기심법요결.html">
+    <div class="book-title">의종금감 운기심법요결</div>
+    <div class="book-meta">〔청〕 오겸(吳謙) 등 찬 · 챕터 7개</div>
+    <div class="book-desc">의종금감 운기심법요결</div>
+    <span class="book-tag">읽기 &rarr;</span>
+  </a>
+  <a class="book-card" href="reader-의종금감-06상한심법요결.html">
+    <div class="book-title">의종금감 상한심법요결</div>
+    <div class="book-meta">〔청〕 오겸(吳謙) 등 찬 · 챕터 4개</div>
+    <div class="book-desc">의종금감 상한심법요결</div>
+    <span class="book-tag">읽기 &rarr;</span>
+  </a>
+  <a class="book-card" href="reader-의종금감-07잡병심법요결.html">
+    <div class="book-title">의종금감 권39 잡병심법요결</div>
+    <div class="book-meta">Kami · 챕터 1개</div>
+    <div class="book-desc">의종금감 권39 잡병심법요결</div>
+    <span class="book-tag">읽기 &rarr;</span>
+  </a>
+  </div>
+</body>
+</html>
