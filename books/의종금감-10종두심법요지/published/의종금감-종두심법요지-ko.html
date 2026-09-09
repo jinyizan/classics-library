@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>의종금감 종두심법요지</title>
+<meta name="author" content="〔청〕 오겸(吳謙) 등 찬">
+<meta name="description" content="의종금감 종두심법요지">
+<meta name="generator" content="Kami + translate-book">
+<style>
+  /* Regular weight */
+  @font-face {
+    font-family: "Source Han Serif K";
+    src: url("file:///Users/jinyizan/Desktop/Asset/translate-kami/assets/fonts/SourceHanSerifKR-Regular.ttf") format("truetype"),
+       url("https://cdn.jsdelivr.net/gh/tw93/Kami@main/assets/fonts/SourceHanSerifKR-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* Medium weight */
+  @font-face {
+    font-family: "Source Han Serif K";
+    src: url("file:///Users/jinyizan/Desktop/Asset/translate-kami/assets/fonts/SourceHanSerifKR-Medium.ttf") format("truetype"),
+       url("https://cdn.jsdelivr.net/gh/tw93/Kami@main/assets/fonts/SourceHanSerifKR-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @page {
+    size: A4;
+    margin: 20mm 22mm 22mm 22mm;
+    background: #f5f4ed;
+
+    @top-right {
+      content: string(section-title);
+      font-family: "Source Han Serif K", "Source Han Serif KR", "Apple SD Gothic Neo",
+                   "Noto Serif KR", "AppleMyungjo", Georgia, serif;
+      font-size: 8pt;
+      color: #6b6a64;
+    }
+
+    @bottom-center {
+      content: counter(page) "  ·  의종금감 종두심법요지";
+      font-family: "Source Han Serif K", "Source Han Serif KR", "Apple SD Gothic Neo",
+                   "Noto Serif KR", "AppleMyungjo", Georgia, serif;
+      font-size: 9pt;
+      color: #6b6a64;
+    }
+  }
+
+  @page:first {
+    @top-right { content: ""; }
+    @bottom-center { content: ""; }
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --parchment: #f5f4ed;
+    --ivory:     #faf9f5;
+    --near-black:#141413;
+    --dark-warm: #3d3d3a;
+    --olive:     #504e49;
+    --stone:     #6b6a64;
+    --brand:     #1B365D;
+    --border:    #e8e6dc;
+    --border-soft:#e5e3d8;
+    --tag-bg:    #E4ECF5;
+    --serif: "Source Han Serif K", "Source Han Serif KR", "Noto Serif KR", "Apple SD Gothic Neo", "AppleMyungjo", Charter, Georgia, serif;
+    --sans: var(--serif);
+
+    --rhythm-module:  14pt;
+    --rhythm-section: 18pt;
+  }
+
+  html, body { background: var(--parchment); }
+
+  @media screen {
+    body { max-width: 210mm; margin: 0 auto; padding: 20mm 22mm 22mm 22mm; }
+  }
+
+  body {
+    color: var(--near-black);
+    font-family: var(--serif);
+    font-size: 10.5pt;
+    line-height: 1.55;
+    letter-spacing: 0.3pt;
+    widows: 3;
+    orphans: 3;
+    font-synthesis: none;
+  }
+
+  .sans {
+    font-family: var(--sans);
+  }
+
+  /* ========== COVER ========== */
+  .cover {
+    min-height: 240mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40mm 0 0 0;
+    break-after: page;
+  }
+  .cover-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8pt;
+    font-family: var(--sans);
+    font-size: 10pt;
+    color: var(--brand);
+    letter-spacing: 1.5pt;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 18pt;
+  }
+  .cover-eyebrow::before {
+    content: "";
+    width: 9pt;
+    height: 1.5pt;
+    border-radius: 0.75pt;
+    background: var(--brand);
+    flex-shrink: 0;
+  }
+  .cover-title {
+    font-size: 36pt;
+    font-weight: 500;
+    color: var(--near-black);
+    line-height: 1.15;
+    letter-spacing: 0.3pt;
+    margin-bottom: 16pt;
+  }
+  .cover-sub {
+    font-family: var(--sans);
+    font-size: 14pt;
+    color: var(--olive);
+    line-height: 1.5;
+    max-width: 85%;
+    margin-bottom: 30pt;
+  }
+  .cover-meta {
+    font-family: var(--sans);
+    font-size: 10pt;
+    color: var(--stone);
+    line-height: 1.5;
+  }
+  .cover-meta strong {
+    color: var(--dark-warm);
+    font-weight: 500;
+  }
+
+  /* ========== TOC (목차) ========== */
+  .toc { break-after: page; }
+  .toc h2 {
+    font-size: 22pt;
+    font-weight: 500;
+    margin-bottom: var(--rhythm-module);
+    border-left: 2.5pt solid var(--brand);
+    border-radius: 1.5pt;
+    padding-left: 8pt;
+  }
+  .toc-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 6pt 0;
+    border-bottom: 0.3pt dotted var(--border);
+    font-size: 11pt;
+  }
+  .toc-item:last-of-type { border-bottom: none; }
+  .toc-num {
+    color: var(--brand);
+    font-weight: 500;
+    min-width: 30pt;
+  }
+  .toc-title {
+    flex: 1;
+    color: var(--near-black);
+    padding-left: 6pt;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 12pt;
+  }
+  .toc-title[href]::after {
+    content: target-counter(attr(href), page);
+    color: var(--stone);
+    font-variant-numeric: tabular-nums;
+    margin-left: auto;
+  }
+
+  /* ========== HEADINGS ========== */
+  h1 {
+    font-size: 22pt;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 0 10pt 0;
+    border-left: 2.5pt solid var(--brand);
+    border-radius: 1.5pt;
+    padding-left: 8pt;
+    color: var(--near-black);
+    break-after: avoid;
+    string-set: section-title content();
+  }
+
+  .running-title { string-set: section-title content(); }
+
+  h2 {
+    font-size: 16pt;
+    font-weight: 500;
+    line-height: 1.25;
+    margin: 24pt 0 8pt 0;
+    color: var(--near-black);
+    break-after: avoid;
+  }
+
+  h3 {
+    font-size: 13pt;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 18pt 0 6pt 0;
+    color: var(--dark-warm);
+    break-after: avoid;
+  }
+
+  .chapter-num {
+    font-family: var(--sans);
+    font-size: 10pt;
+    color: var(--brand);
+    letter-spacing: 1pt;
+    text-transform: uppercase;
+    margin-bottom: 6pt;
+  }
+
+  /* ========== PARAGRAPHS ========== */
+  p {
+    margin: 0 0 10pt 0;
+    line-height: 1.55;
+    color: var(--near-black);
+    widows: 2;
+    orphans: 2;
+  }
+
+  .lead {
+    font-size: 12pt;
+    line-height: 1.55;
+    color: var(--dark-warm);
+    margin-bottom: var(--rhythm-module);
+  }
+
+  .hl { color: var(--brand); font-weight: 500; }
+  strong { font-weight: 500; }
+
+  /* ========== LISTS ========== */
+  ul, ol {
+    margin: 6pt 0 10pt 0;
+    padding-left: 20pt;
+    line-height: 1.55;
+  }
+  ul li::marker { color: var(--brand); }
+  ol li::marker { color: var(--brand); font-weight: 500; }
+
+  /* ========== QUOTE ========== */
+  blockquote, .quote {
+    border-left: 2pt solid var(--brand);
+    margin: 12pt 0;
+    padding: 4pt 0 4pt 16pt;
+    color: var(--olive);
+    line-height: 1.55;
+    break-inside: avoid;
+  }
+  blockquote .cite, .quote .cite {
+    display: block;
+    font-size: 9pt;
+    color: var(--stone);
+    margin-top: 4pt;
+  }
+
+  /* ========== CODE ========== */
+  /* Mono-first for Latin glyphs; Korean fallback via SourceHanSerifK so
+     Korean comments inside code blocks render without missing-glyph boxes. */
+  code {
+    font-family: "JetBrains Mono", "D2Coding", "SF Mono", Consolas,
+                 "Source Han Serif K", "Source Han Serif KR", "Apple SD Gothic Neo", monospace;
+    font-size: 9pt;
+    background: var(--ivory);
+    padding: 1pt 4pt;
+    border-radius: 2pt;
+    color: var(--dark-warm);
+  }
+  pre {
+    font-family: "JetBrains Mono", "D2Coding", "SF Mono", Consolas,
+                 "Source Han Serif K", "Source Han Serif KR", "Apple SD Gothic Neo", monospace;
+    font-size: 9pt;
+    line-height: 1.5;
+    background: var(--ivory);
+    border-radius: 4pt;
+    padding: 10pt 14pt;
+    margin: 10pt 0;
+    white-space: pre-wrap;
+    color: var(--near-black);
+    break-inside: avoid;
+  }
+  pre code { background: transparent; padding: 0; font-size: inherit; }
+
+  /* ========== TABLE (kami-table) ========== */
+  table, .kami-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9.5pt;
+    margin: 12pt 0;
+    break-inside: avoid;
+  }
+  table th, .kami-table th {
+    text-align: left;
+    font-weight: 500;
+    color: var(--dark-warm);
+    padding: 6pt 8pt;
+    border-bottom: 1pt solid var(--border);
+    background: transparent;
+  }
+  table td, .kami-table td {
+    padding: 5pt 8pt;
+    border-bottom: 0.3pt solid var(--border-soft);
+    vertical-align: top;
+  }
+  table.compact th, .kami-table.compact th { padding: 3pt 6pt; font-size: 8pt; }
+  table.compact td, .kami-table.compact td { padding: 2pt 6pt; font-size: 8pt; line-height: 1.4; }
+  table.financial td:not(:first-child), .kami-table.financial td:not(:first-child) {
+    text-align: right; font-variant-numeric: tabular-nums;
+  }
+  table.financial th:not(:first-child), .kami-table.financial th:not(:first-child) { text-align: right; }
+  table.striped tbody tr:nth-child(even) td, .kami-table.striped tbody tr:nth-child(even) td {
+    background: var(--ivory);
+  }
+  table .total td, .kami-table .total td {
+    font-weight: 500; border-top: 1pt solid var(--brand); border-bottom: none; color: var(--near-black);
+  }
+
+  /* ========== CALLOUT ========== */
+  .callout {
+    background: var(--ivory);
+    border-left: 2pt solid var(--brand);
+    padding: 10pt 14pt;
+    border-radius: 3pt;
+    margin: 12pt 0;
+    line-height: 1.55;
+    break-inside: avoid;
+  }
+  .callout blockquote,
+  .callout .quote {
+    border-left: none;
+    padding-left: 0;
+    margin: 6pt 0;
+    color: var(--olive);
+  }
+  .callout blockquote:first-child,
+  .callout .quote:first-child { margin-top: 0; }
+  .callout blockquote:last-child,
+  .callout .quote:last-child  { margin-bottom: 0; }
+
+  .takeaway {
+    background: var(--ivory);
+    border-radius: 4pt;
+    padding: 10pt 14pt;
+    margin: 14pt 0;
+    break-inside: avoid;
+  }
+  .takeaway-label {
+    font-family: var(--sans);
+    font-size: 9pt;
+    color: var(--brand);
+    letter-spacing: 0.5pt;
+    text-transform: uppercase;
+    margin-bottom: 4pt;
+  }
+
+  /* ========== TAG ========== */
+  .tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--brand);
+    font-family: var(--sans);
+    font-size: 9pt;
+    font-weight: 500;
+    padding: 1pt 6pt;
+    border-radius: 3pt;
+    margin-right: 4pt;
+  }
+
+  /* ========== FIGURE ========== */
+  figure {
+    margin: 14pt 0;
+    break-inside: avoid;
+  }
+  figure img {
+    max-width: 100%;
+    border-radius: 4pt;
+  }
+  figcaption {
+    font-family: var(--sans);
+    font-size: 9pt;
+    color: var(--stone);
+    margin-top: 6pt;
+    text-align: center;
+  }
+
+  /* ========== EXECUTIVE SUMMARY ========== */
+  .exec-summary {
+    background: var(--ivory);
+    border-left: 1.4pt solid var(--brand);
+    border-radius: 6pt;
+    padding: 16pt 20pt;
+    margin: 14pt 0;
+    break-inside: avoid;
+  }
+  .exec-summary h2 {
+    margin-top: 0;
+    font-size: 13pt;
+  }
+
+  /* ========== CHAPTER BREAK ========== */
+  .chapter { break-before: page; }
+</style>
+</head>
+<body>
+
+<section class="cover">
+  <div>
+    <div class="cover-eyebrow">번역본</div>
+    <div class="cover-title">의종금감 종두심법요지</div>
+    <div class="cover-sub"></div>
+  </div>
+  <div class="cover-meta">
+    <strong>〔청〕 오겸(吳謙) 등 찬</strong><br>
+    2026.09<br>
+    번역 · Kami 디자인
+  </div>
+</section>
+
+<section class="toc">
+  <h2>목차</h2>
+  <div class="toc-item">
+    <span class="toc-num">01</span>
+    <a class="toc-title" href="#ch-01">種痘要旨 · 종두요지</a>
+  </div>
+  <div class="toc-item">
+    <span class="toc-num">02</span>
+    <a class="toc-title" href="#ch-02">選苗 · 선묘</a>
+  </div>
+  <div class="toc-item">
+    <span class="toc-num">03</span>
+    <a class="toc-title" href="#ch-03">蓄苗 · 축묘</a>
+  </div>
+  <div class="toc-item">
+    <span class="toc-num">04</span>
+    <a class="toc-title" href="#ch-04">天時 · 천시</a>
+  </div>
+  <div class="toc-item">
+    <span class="toc-num">05</span>
+    <a class="toc-title" href="#ch-05">擇吉 · 택길</a>
+  </div>
+  <div class="toc-item">
+    <span class="toc-num">06</span>
+    <a class="toc-title" href="#ch-06">調攝 · 조섭</a>
+  </div>
+  <div class="toc-item">
+    <span class="toc-num">07</span>
+    <a class="toc-title" href="#ch-07">禁忌 · 금기</a>
+  </div>
+  <div class="toc-item">
+    <span class="toc-num">08</span>
+    <a class="toc-title" href="#ch-08">可種 · 가종</a>
+  </div>
+  <div class="toc-item">
+    <span class="toc-num">09</span>
+    <a class="toc-title" href="#ch-09">不可種 · 불가종</a>
+  </div>
+  <div class="toc-item">
+    <span class="toc-num">10</span>
+    <a class="toc-title" href="#ch-10">水苗種法 · 수묘종법</a>
+  </div>
+  <div class="toc-item">
+    <span class="toc-num">11</span>
+    <a class="toc-title" href="#ch-11">五藏傳送之理 · 오장전송지리</a>
+  </div>
+  <div class="toc-item">
+    <span class="toc-num">12</span>
+    <a class="toc-title" href="#ch-12">旱苗種法 · 한묘종법</a>
+  </div>
+  <div class="toc-item">
+    <span class="toc-num">13</span>
+    <a class="toc-title" href="#ch-13">痘衣種法 · 두의종법</a>
+  </div>
+  <div class="toc-item">
+    <span class="toc-num">14</span>
+    <a class="toc-title" href="#ch-14">痘漿種法 · 두장종법</a>
+  </div>
+  <div class="toc-item">
+    <span class="toc-num">15</span>
+    <a class="toc-title" href="#ch-15">信苗 · 신묘</a>
+  </div>
+  <div class="toc-item">
+    <span class="toc-num">16</span>
+    <a class="toc-title" href="#ch-16">補種 · 보종</a>
+  </div>
+  <div class="toc-item">
+    <span class="toc-num">17</span>
+    <a class="toc-title" href="#ch-17">自出 · 자출</a>
+  </div>
+  <div class="toc-item">
+    <span class="toc-num">18</span>
+    <a class="toc-title" href="#ch-18">治法 · 치법</a>
+  </div>
+</section>
+
+<section class="chapter" id="ch-01">
+  <div class="chapter-num">01 · 제1장</div>
+  <h1>種痘要旨 · 종두요지</h1>
+
+  
+<p class="lead">〔원문〕嘗考種痘之法，有謂取痘粒之漿而種之者，有謂服痘兒之衣而種之者，有謂以痘痂屑乾吹入鼻中種之，謂之旱苗者，有謂以痘痂屑濕納入鼻孔種之，謂之水苗者。然即四者而較之，水苗為上，旱苗次之，痘衣多不應驗，痘漿太涉殘忍，故古法獨用水苗，蓋取其和平穩當也。近世始用旱苗，法雖捷徑，微覺迅烈。若痘衣、痘漿之說，則斷不可從。</p>
+<p>일찍이 종두(種痘)하는 법을 고찰해 보건대, 두알(痘粒)의 장(漿)을 취하여 심는다고 하는 자가 있고, 두창을 앓는 아이의 옷을 입어서 심는다고 하는 자가 있으며, 두가(痘痂) 가루를 마른 채 코 속에 불어넣어 심는 것을 한묘(旱苗)라 하는 자가 있고, 두가 가루를 축축하게 하여 콧구멍에 넣어 심는 것을 수묘(水苗)라 하는 자가 있다. 그러나 이 넷을 견주어 보면 수묘가 으뜸이고 한묘가 그 다음이며, 두의(痘衣)는 대개 효험이 없고 두장(痘漿)은 너무 잔혹하니, 옛 법은 오직 수묘만을 썼으니 그 온화하고 안정됨을 취한 것이다. 근세에 이르러 비로소 한묘를 쓰게 되었는데, 법은 비록 지름길이지만 약간 심하고 급한 느낌이 있다. 두의·두장의 설은 단연코 따라서는 안 된다.</p>
+<p>〔원문〕夫水苗之所以善者，以其勢甚和平，不疾不徐，漸次而入。既種之後，小兒無受傷之處，胎毒有漸發之機，百發百中，捷於影響，盡善盡美，可法可傳，為種痘之最優者。其次則旱苗，雖烈猶與水苗之法相近，兒體壯盛猶或可施。</p>
+<p>무릇 수묘가 좋은 까닭은 그 형세가 매우 온화하여 급하지도 느리지도 않고 점차로 들어가기 때문이다. 심은 뒤에 아이에게 상처 입은 곳이 없고 태독(胎毒)이 점차 발할 기회를 얻으니, 백 발백중(百發百中)이요 그 응함이 그림자와 메아리보다 빠르며, 지극히 선하고 지극히 아름다워 본받고 전할 만하니 종두법 가운데 가장 뛰어난 것이다. 그 다음은 한묘인데, 비록 사납지만 오히려 수묘의 법과 서로 가까워 아이의 체질이 튼튼하고 성하면 오히려 시행할 수도 있다.</p>
+<p>〔원문〕至若痘痂之何以為順，選苗之何以善藏，天時之何以得正，種期之何以為吉，調攝之何以合宜，禁忌之何以如法，形氣之何以可種，與痘衣、痘漿之弊，一一條分縷晰，細列於後。學者必細心體閱，則中有灼見，不致有他岐之惑，庶種法既善，而成功可必矣。</p>
+<p>두가(痘痂)가 어찌하여 순(順)한 것이 되는지, 묘(苗)를 가려 어찌 잘 간직하는지, 천시(天時)가 어찌 바름을 얻는지, 종기(種期)가 어찌 길(吉)한 것이 되는지, 조섭(調攝)이 어찌 마땅하게 합하는지, 금기(禁忌)가 어찌 법다운지, 형기(形氣)가 어찌 종두할 만한지와 두의·두장의 폐단에 이르기까지, 하나하나 조목으로 나누고 실오라기처럼 가려 내어 뒤에 자세히 열거한다. 배우는 이는 반드시 세심하게 살펴 읽어야 그 가운데 밝은 식견을 갖추어 다른 갈래의 미혹에 빠지지 않을 것이니, 종두법이 이미 좋으면 성공을 기약할 수 있을 것이다.</p>
+
+</section>
+
+<section class="chapter" id="ch-02">
+  <div class="chapter-num">02 · 제2장</div>
+  <h1>選苗 · 선묘</h1>
+
+  
+<p class="lead">〔원문〕苗者，痘之痂也。種痘者全資乎此，以為胎毒之引導，關係匪輕。選苗時宜留神細察，不可輕忽。其中有可用者，有不可用者，惟在痘之順與不順別之。痘之不順者，出不尖圓，色不紅潤，漿不充滿，所落之痂黑暗而薄。此天人合病，內外合邪所致，即幸而得愈，亦不過良工之善為調治，非天然之美，此等痘痂斷不可用。</p>
+<p>묘(苗)란 두창의 딱지[痂]이다. 종두하는 이는 온전히 이것에 힘입어 태독(胎毒)을 이끄는 길잡이로 삼으니 관계가 가볍지 않다. 묘를 고를 때는 마음을 두어 자세히 살펴야 하니 가볍게 소홀히 해서는 안 된다. 그 가운데 쓸 만한 것도 있고 쓸 수 없는 것도 있으니, 오직 두창이 순(順)한가 순하지 않은가로써 그것을 가린다. 두창이 순하지 않은 자는 돋아나도 뾰족하고 둥글지 않으며, 색이 붉고 윤택하지 않고, 장(漿)이 가득 차지 않아 떨어진 딱지가 어둡고 검으며 얇다. 이는 하늘과 사람이 함께 병되고 안팎으로 사(邪)가 합쳐져 초래된 것이니, 요행히 낫는다 하더라도 또한 훌륭한 의원이 잘 조치(調治)한 것일 뿐 자연스러운 아름다움은 아니다. 이러한 종류의 두가는 단연코 써서는 안 된다.</p>
+<p>〔원문〕痘之順者，始終無夾雜之證，出則尖圓，色則紅潤，漿則充滿，所落之痂蒼蠟光澤，肥大厚實，此得天地陰陽之正氣，極順之苗也，收而用之，效如響應。但此痂甚少，所遇無多，或不能親其事而假手他人，亦必令彼身親目睹方可。否則寧置而不用，切勿濫用，種者審之。</p>
+<p>두창이 순한 자는 처음부터 끝까지 잡된 증이 없어, 나오면 뾰족하고 둥글며, 색은 붉고 윤택하고, 장(漿)은 가득 차며, 떨어진 딱지는 창백한 밀랍 빛으로 윤택하고 크고 두터우며 단단하다. 이는 천지 음양(陰陽)의 정기(正氣)를 얻은 것으로 지극히 순한 묘이니, 거두어 쓰면 효험이 메아리가 응하듯 한다. 다만 이 딱지는 매우 드물어 만나는 일이 많지 않다. 혹 제가 그 일을 친히 하지 못하고 다른 사람에게 손을 빌린다면, 또한 반드시 그로 하여금 몸소 보고 눈으로 확인한 뒤라야 가하다. 그렇지 않다면 차라리 두고 쓰지 않을 것이니, 절대로 함부로 쓰지 말라. 종두하는 자는 이를 살필 것이다.</p>
+
+</section>
+
+<section class="chapter" id="ch-03">
+  <div class="chapter-num">03 · 제3장</div>
+  <h1>蓄苗 · 축묘</h1>
+
+  
+<p class="lead">〔원문〕種痘必資於苗，而苗之所奇恃者，在氣之相通耳。若遇熱則氣泄，日久則氣薄，觸污穢則氣不清，藏不潔則氣不正，此蓄苗之法所以不可不慎也。</p>
+<p>종두는 반드시 묘(苗)에 힘입는데, 묘에서 믿고 의지할[可恃] 만한 것은 기(氣)가 서로 통하는 데에 있을 뿐이다. 만일 더위를 만나면 기가 새어 나가고, 날이 오래면 기가 엷어지며, 더러운 것에 닿으면 기가 맑지 않고, 간직하는 곳이 깨끗하지 않으면 기가 바르지 않다. 이런 까닭에 묘를 간직하는 법을 삼가지 않을 수 없는 것이다.</p>
+<p>〔원문〕如遇好苗，須貯新磁瓶內，上以物密覆之，置於潔淨之所、清涼之處。其所貯之苗，在春天者，一月之痂可種；冬令嚴寒，四五十日之痂尚可種。蓋寒則氣收藏，熱則氣易泄，故時日有不同也。</p>
+<p>좋은 묘를 만나면 모름지기 새 자기 병에 담고 위를 물건으로 빈틈없이 덮어서 깨끗한 곳, 서늘한 곳에 두어야 한다. 그 간직한 묘는 봄철이라면 한 달 된 딱지까지 심을 수 있고, 겨울철의 엄한 추위에는 40~50일 된 딱지도 오히려 심을 수 있다. 대개 추우면 기가 거두어져 갈무리되고 더우면 기가 쉽게 새기 때문에 시일이 같지 않은 것이다.</p>
+<p>〔원문〕然於未收苗時，即當先與出痘之家明言其故，使彼樂從，無所疑忌，彼方肯用心收貯，不致稍有貽誤也。</p>
+<p>그러나 묘를 거두기 전에 곧 먼저 두창을 앓는 집과 그 까닭을 분명히 말해 두어, 그들로 하여금 즐겨 따르고 의심하고 꺼리는 바가 없게 해야 한다. 그래야 그들이 비로소 마음을 써서 거두어 간직하려 하여 조금도 그르침이 없을 것이다.</p>
+
+</section>
+
+<section class="chapter" id="ch-04">
+  <div class="chapter-num">04 · 제4장</div>
+  <h1>天時 · 천시</h1>
+
+  
+<p>〔원문〕種痘貴得天時，得其時則種，不得其時則不種。夫天時之正，莫過於春。春為萬物發生之際，天氣融和，不寒不熱，種之則痘自隨其氣而發生，此正、二、三月之時所以可種也。若交夏之後，六陽盡出地上，人之陽氣亦皆外浮，暑熱爍金，受病者眾，斯時種痘，兒何以堪？此四、五、六月之時所以必不可種也。至若秋令，天氣清肅，收斂之時，雖遇可種之兒，而無引毒之具，此七、八、九月之時勢有不能種也。至於十月，名曰小春，雖亦可種，然斯時寒氣固結，純陰用事，不若俟冬至後一陽鼓動，借其生生之氣，種之甚吉。此十月之所以可種，猶不若十一、十二月之尤可種也。</p>
+<p>종두는 천시(天時)를 얻는 것을 귀하게 여긴다. 그 때를 얻으면 심고 그 때를 얻지 못하면 심지 않는다. 무릇 천시의 바름은 봄보다 나은 것이 없다. 봄은 만물이 발생하는 때라 천기가 온화하여 춥지도 덥지도 않으니, 심으면 두창이 저절로 그 기운을 따라 발생한다. 이것이 정월·이월·삼월의 때라서 심을 수 있는 까닭이다.</p>
+<p>만일 여름으로 접어든 뒤에는 육양(六陽)이 모두 땅 위로 나오고 사람의 양기(陽氣)도 또한 모두 밖으로 떠오르며, 더위의 열이 금(金)을 녹여 병을 받는 이가 많다. 이때에 종두를 하면 아이가 어찌 견디겠는가. 이것이 사월·오월·유월의 때라서 반드시 심어서는 안 되는 까닭이다.</p>
+<p>가을철에 이르러서는 천기가 맑고 엄숙하여 거두어들이는 때이니, 비록 심을 만한 아이를 만난다 해도 독을 이끌어 낼 방도가 없다. 이것이 칠월·팔월·구월의 때가 형세상 심을 수 없는 까닭이다.</p>
+<p>시월에 이르러서는 이름을 소춘(小春)이라 하는데, 비록 또한 심을 수는 있으나 이때는 한기(寒氣)가 굳게 뭉쳐 순음(純陰)이 일을 주관하므로, 동지(冬至) 뒤에 일양(一陽)이 고동(鼓動)하여 그 낳고 낳는 기운을 빌려 심는 것만 못하다. 이것이 시월이 심을 만하기는 하되 십일월·십이월만큼 더욱 심을 만하지는 못하는 까닭이다.</p>
+<p>〔원문〕然當可種之時，亦有不可種者。如春應溫而反寒，夏應熱而反涼，秋應涼而反熱，冬應寒而反溫，當其時而非其氣，是天地不正之氣也。常人感染則成時疫，小兒調理未遑，況敢言種痘乎？倘或遇此，只宜稍避，俟時氣平定，再為議種，方保萬全。</p>
+<p>그러나 심을 만한 때를 당하여서도 또한 심지 못하는 경우가 있다. 이를테면 봄은 마땅히 따뜻해야 할 터인데 도리어 춥고, 여름은 마땅히 더워야 할 터인데 도리어 서늘하며, 가을은 마땅히 서늘해야 할 터인데 도리어 덥고, 겨울은 마땅히 추워야 할 터인데 도리어 따뜻한 경우이니, 그 때를 당하였으나 그 기운이 아니면 이는 천지(天地)의 바르지 못한 기운이다. 보통 사람이 감염되면 시역(時疫)이 되거늘, 소아는 조리(調理)할 겨를도 없는데 하물며 감히 종두를 말할 수 있겠는가. 혹 이러한 경우를 만나면 다만 조금 피하여 시기(時氣)가 안정되기를 기다렸다가 다시 종두를 의논해야만 비로소 만전을 보전한다.</p>
+<p>〔원문〕亦有未種之時天時甚正，既種之後忽爾寒暄不時，此又人事所遇不齊，偶爾變氣，出乎意外者也。則宜屋中適其寒溫，順會天時，常燒辟穢香，飲食起居更加謹慎，可保無恙。種痘者宜詳審而體察之。</p>
+<p>또 심지 않았을 때에는 천시가 매우 바르다가 이미 심은 뒤에 갑자기 춥고 따뜻함이 때 아닌 경우도 있다. 이는 또 인사(人事)가 미치는 바가 고르지 못하여 우연히 기운이 변한 것이니 뜻밖의 일이다. 이때는 마땅히 방 안에서 추위와 더위를 알맞게 하여 천시에 순응하고, 늘 피예향(辟穢香)을 피우며 음식과 기거를 더욱 근신하면 탈 없음을 보전할 수 있다. 종두하는 이는 마땅히 자세히 살피고 몸소 체찰(體察)해야 한다.</p>
+
+</section>
+
+<section class="chapter" id="ch-05">
+  <div class="chapter-num">05 · 제5장</div>
+  <h1>擇吉 · 택길</h1>
+
+  
+<p class="lead">〔원문〕下苗之日，必擇成日、開日、栽種日及合天月二德日則吉。倘三者不能兼備，即成開之日亦可。若值人神所在之日，忌不可種。</p>
+<p>묘(苗)를 넣는 날은 반드시 성일(成日)·개일(開日)·재종일(栽種日) 및 천월이덕일(天月二德日)에 합하는 날을 가려야 길(吉)하다. 만일 세 가지를 아울러 갖추지 못한다면 성일이나 개일이라도 또한 가하다. 만일 인신(人神)이 머무는 날에 걸리면 꺼려서 심어서는 안 된다.</p>
+<p>〔원문〕種痘吉日：成日、開日、栽種日。</p>
+<p>종두 길일: 성일(成日)·개일(開日)·재종일(栽種日).</p>
+<p>〔원문〕天月二德日：正五九月在丙，二六十月在甲，三七十一月在壬，四八十二月在庚。</p>
+<p>천월이덕일(天月二德日): 정월·오월·구월은 병(丙)에 있고, 이월·유월·시월은 갑(甲)에 있으며, 삼월·칠월·십일월은 임(壬)에 있고, 사월·팔월·십이월은 경(庚)에 있다.</p>
+<p>〔원문〕人神所在之日：十一日在鼻柱，十五日在遍身。</p>
+<p>인신(人神)이 머무는 날: 11일은 비주(鼻柱)에 있고, 15일은 온몸에 있다.</p>
+
+</section>
+
+<section class="chapter" id="ch-06">
+  <div class="chapter-num">06 · 제6장</div>
+  <h1>調攝 · 조섭</h1>
+
+  
+<p class="lead">〔원문〕種痘之在調攝最為緊要，自始至終不可稍忽，如避寒熱、慎飲食是也。天氣嚴寒，蓋覆宜溫暖，勿使受寒，恐被寒氣所觸則痘不得出；亦不可過於重棉疊褥，使熱氣壅滯，致痘不宣發。天氣溫暖，蓋覆宜適中，恐客熱與毒相併，致增煩熱；亦不可輕易著單露體，使寒邪外侵，阻遏生發之氣。此寒熱所以貴得其平也。</p>
+<p>종두에서 조섭(調攝)보다 더 긴요한 것은 없으니, 처음부터 끝까지 조금도 소홀히 해서는 안 된다. 이를테면 한열(寒熱)을 피하고 음식을 삼가는 것이 이것이다. 천기가 몹시 추우면 덮어 주는 것을 따뜻하게 하여 추위를 받지 않게 해야 하니, 한기(寒氣)에 닿아 두창이 나오지 못할까 염려해서이다. 또한 솜을 겹치고 요를 포개는 것이 지나쳐 열기(熱氣)가 막혀 정체되어 두창이 선발(宣發)되지 않는 일이 없게 해야 한다. 천기가 따뜻하면 덮어 주는 것을 알맞게 하여야 하니, 객열(客熱)이 독(毒)과 합쳐져 번열(煩熱)이 더해질까 염려해서이다. 또한 가벼이 홑옷만 입고 몸을 드러내어 한사(寒邪)가 밖에서 침입해 생발(生發)의 기운을 막는 일도 없게 해야 한다. 이것이 한열(寒熱)이 그 평(平)을 얻는 것을 귀하게 여기는 까닭이다.</p>
+<p>〔원문〕人之氣血必藉飲食生化，痘之始終全賴乎此。若飲食虧少，氣血何所資助乎？但不可過甚。若過飲則飲停不化津液，過食則食滯必生痰熱。所以吮乳之兒不多乳、不闕乳，能食之兒勿餐辛熱炙煿，勿啖黏硬生冷，勿恣意茶水，勿使飲涼漿。食不過飽，亦不過饑。此飲食所以貴得其平也。</p>
+<p>사람의 기혈(氣血)은 반드시 음식에 힘입어 생화(生化)하니, 두창의 시종(始終)이 온전히 여기에 달려 있다. 만일 음식이 모자라면 기혈이 무엇에 힘입어 도움을 받겠는가. 그러나 지나쳐서도 안 된다. 지나치게 마시면 마신 것이 정체되어 진액(津液)을 화(化)하지 못하고, 지나치게 먹으면 먹은 것이 체하여[食滯] 반드시 담열(痰熱)을 낳는다. 그러므로 젖 빠는 아이는 젖을 많이 먹이지도, 모자라게 하지도 말며, 밥을 먹을 수 있는 아이는 맵고 뜨거운 것과 구운 것·볶은 것을 먹이지 말고, 끈적하고 단단하며 생것이고 찬 것을 먹이지 말며, 차와 물을 마음대로 마시게 하지 말고, 찬 장(漿)을 마시게 하지 말아야 한다. 밥은 지나치게 배부르지도, 지나치게 배고프지도 않게 한다. 이것이 음식이 그 평을 얻는 것을 귀하게 여기는 까닭이다.</p>
+<p>〔원문〕至於寒熱飲食之外，凡舉止動作，既不可任意驕縱，亦不可過於拂逆，惟在調攝之人耐其性情，兢兢業業，善為保護。不但慎於既種之後，且當慎於未種之先；不但慎之見苗之初，尤當慎之落痂之後。種痘者宜諄諄告誡，務期詳細，使彼知關係匪輕，心存謹慎，如法調攝，始保萬全。</p>
+<p>한열(寒熱)과 음식 밖에도, 무릇 거동과 동작은 마음대로 제멋에 내버려 두어 교종(驕縱)하게 하지도 말고 지나치게 거슬리게 해서도 안 되니, 오직 조섭하는 사람이 그 성정(性情)을 참아 내며 조심하고 또 조심하여[兢兢業業] 잘 보호하는 데 달려 있다. 이미 심은 뒤에만 삼갈 것이 아니라 심기 전에도 마땅히 삼가야 하고, 묘(苗)가 보이기 시작할 때만 삼갈 것이 아니라 딱지가 떨어진 뒤에 더욱 마땅히 삼가야 한다. 종두하는 이는 마땅히 간곡히 타이르고 경계시켜, 힘써 상세하게 하여 그들로 하여금 관계가 가볍지 않음을 알고 마음에 근신함을 품어 법대로 조섭하게 해야 비로소 만전을 보전한다.</p>
+<p>〔원문〕倘稍有不謹，以致小兒或為寒熱所侵，或為飲食所傷，咎將誰諉乎？此不知調攝者所以斷不可與種也。</p>
+<p>만일 조금이라도 삼가지 않아 아이가 혹 한열(寒熱)에 침해되거나 혹 음식에 상하게 되면, 허물을 장차 누구에게 미루겠는가. 이것이 조섭할 줄 모르는 자에게는 단연코 종두해 주어서는 안 되는 까닭이다.</p>
+
+</section>
+
+<section class="chapter" id="ch-07">
+  <div class="chapter-num">07 · 제7장</div>
+  <h1>禁忌 · 금기</h1>
+
+  
+<p class="lead">〔원문〕種痘之家，房中最要潔淨，切忌沖犯；最喜明亮，不可幽暗。擇老成耐事之人，經過小兒出痘者，令其調護，不離左右。一切禁忌俱當謹遵：勿詈罵呼怒，勿言語驚慌，勿對梳頭，勿對搔癢，勿嗜酒，勿歌樂。</p>
+<p>종두하는 집은 방 안을 가장 깨끗이 해야 하니, 충범(沖犯)함을 절대 꺼리고, 밝은 것을 가장 기뻐하여 어둡게 해서는 안 된다. 노성(老成)하고 일을 잘 견디는 사람으로 소아의 두창을 겪어 본 이를 가려 좌우를 떠나지 않게 하여 조호(調護)하게 한다. 일체의 금기를 마땅히 삼가 따라야 하니, 욕설을 하거나 소리쳐 성내지 말며, 말을 놀라고 황급하게 하지 말며, 아이를 마주하여 머리를 빗지 말며, 마주하여 가려운 곳을 긁지 말며, 술을 탐하지 말며, 노래하고 음악하지 말라.</p>
+<p>〔원문〕凡房中淫液氣、婦人經候氣、腋下狐臭氣、行遠勞汗氣、誤燒頭髮氣、誤燒魚骨氣、吹滅燈燭氣、硫磺柴煙氣、蔥蒜醉酒氣、溝渠污濁氣，悉宜避之。</p>
+<p>무릇 방 안의 음액(淫液) 기운, 부인의 경후(經候) 기운, 겨드랑이의 액취(狐臭) 기운, 멀리 갔다 온 뒤 흘린 땀 기운, 머리카락을 잘못 태운 기운, 생선 뼈를 잘못 태운 기운, 등촉을 불어 끈 기운, 유황과 땔나무 연기 기운, 파·마늘과 술 취한 기운, 도랑의 더럽고 탁한 기운은 모두 마땅히 피해야 한다.</p>
+<p>〔원문〕更當預囑其左右之人，倘值迅雷烈風暴雨之變，大宜安定，勿使兒驚。其幃帳宜謹，蓋覆宜密，切勿暴動生風。常燒辟穢香，以避偶爾不正之氣。再令人謹伺其門，不許生人往來，不許僧道師巫孝服之人入室。</p>
+<p>또한 마땅히 미리 그 좌우의 사람에게 부탁해 두어야 한다. 혹 갑작스러운 우레와 사나운 바람, 폭우의 변을 만나거든 크게 안정시켜 아이를 놀라게 하지 말라. 그 휘장(幃帳)은 삼가고 덮개는 빈틈없이 하여, 결코 갑자기 움직여 바람을 일으키지 말라. 늘 피예향(辟穢香)을 피워 우연한 부정(不正)의 기운을 피하고, 다시 사람을 시켜 그 문을 삼가 지켜 낯선 사람의 왕래를 허락하지 말고, 중이나 도사, 무당, 상복 입은 사람이 방에 들어오는 것을 허락하지 말라.</p>
+<p>〔원문〕以上禁忌一一遵守則吉，稍有疏忽，每至敗事。種痘者切宜諄諄告誡之。</p>
+<p>이상의 금기를 하나하나 지키면 길(吉)하고, 조금이라도 소홀히 하면 매양 일을 그르치게 되니, 종두하는 이는 모름지기 간곡히 타이르고 경계시켜야 한다.</p>
+<p><strong>辟穢香(피예향)</strong></p>
+<p>〔원문〕南蒼朮(半觔)、川大黃(四兩)。右剉細片，爐中燒之，不可間斷。</p>
+<p>남창출 반 근, 천대황 4냥. 위의 약재를 가늘게 썰어 화로 속에서 태우되 끊어지지 않게 한다.</p>
+
+</section>
+
+<section class="chapter" id="ch-08">
+  <div class="chapter-num">08 · 제8장</div>
+  <h1>可種 · 가종</h1>
+
+  
+<p class="lead">〔원문〕小兒面部紅潤，精采明亮透達。印堂、山根、年壽、眼下、口角，無青暗之色。兩目黑白分明，視瞻平正，愈看愈有神氣精光。囟不陷不填。頭不解顱。鼻孔不小。氣清不濁。聲音清亮。天柱骨正，頸不歪斜。骨肉相稱，又宜緊束，肥不見肉，瘐不露骨。小便遠而長，腎囊緊小，微帶紫黑色，如荔枝殼。身無斂癬瘡疥。項無結核。腹無積聚。形氣充實。精神強健。臟腑調順。脈息和平。以上皆可種。</p>
+<ul>
+<li>얼굴빛이 붉고 윤택하며 정채(精采)가 밝고 빛나며 트여 있고, 인당(印堂)·산근(山根)·연수(年壽)·눈 아래·입가에 푸르고 어두운 빛이 없다.</li>
+<li>두 눈이 흑백이 분명하고 보는 것이 바르며, 볼수록 더욱 신기(神氣)와 정광(精光)이 있다.</li>
+<li>천문(囟)이 꺼지지도 않고 부풀지도 않는다.</li>
+<li>머리가 해로(解顱)되지 않았다.</li>
+<li>콧구멍이 작지 않다.</li>
+<li>기(氣)가 맑고 탁하지 않다.</li>
+<li>목소리가 맑고 밝다.</li>
+<li>천주골(天柱骨)이 바르고 목이 기울어지지 않았다.</li>
+<li>골육(骨肉)이 서로 어울리고 또한 단단히 조여 있어, 살져도 살이 드러나지 않고 여위어도 뼈가 드러나지 않는다.</li>
+<li>소변이 멀리 나가고 길며, 음낭(腎囊)이 조이고 작으며 약간 자흑색(紫黑色)을 띠어 여지(荔枝) 껍질 같다.</li>
+<li>몸에 아문 창[斂]·버짐[癬]·창(瘡)·옴[疥]이 없다.</li>
+<li>목에 결핵(結核)이 없다.</li>
+<li>배에 적취(積聚)가 없다.</li>
+<li>형기(形氣)가 충실하다.</li>
+<li>정신이 강건하다.</li>
+<li>장부(臟腑)가 조화롭고 순하다.</li>
+<li>맥(脈)이 평화롭다.</li>
+<li>이상은 모두 종두할 수 있다.</li>
+</ul>
+
+</section>
+
+<section class="chapter" id="ch-09">
+  <div class="chapter-num">09 · 제9장</div>
+  <h1>不可種 · 불가종</h1>
+
+  
+<p class="lead">〔원문〕小兒面色青白，或黧黑痿黃，無喜色，無精采。兩目黑多白少，白睛帶青色，視瞻歪斜，暗昧無神。囟陷、囟填。解顱。囟不合。五軟。五硬。龜胸。龜背。鶴膝。鼻孔小。氣濁。聲音不亮不長，肉不束骨，鬆如發麵樣。身體瘦無䐃肉。身有斂癬瘡疥。腹有疳積。項有結核。病後元氣未復。素有驚癇之證。失乳之後。氣血不足。脾胃虛弱。精神倦怠。脈不和平。以上皆不可種。</p>
+<ul>
+<li>얼굴빛이 푸르고 희거나, 혹 검고 누렇게 시들어 기쁜 빛이 없고 정채(精采)가 없다.</li>
+<li>두 눈이 검은 것이 많고 흰 것이 적으며, 흰자위가 푸른빛을 띠고 보는 것이 비뚤어지며 어둡고 흐릿하여 신(神)이 없다.</li>
+<li>천문(囟)이 꺼졌거나 천문이 부풀었다.</li>
+<li>해로(解顱)이다.</li>
+<li>천문(囟)이 합쳐지지 않았다.</li>
+<li>오연(五軟)이다.</li>
+<li>오경(五硬)이다.</li>
+<li>귀흉(龜胸)이다.</li>
+<li>귀배(龜背)이다.</li>
+<li>학슬(鶴膝)이다.</li>
+<li>콧구멍이 작다.</li>
+<li>기(氣)가 탁하다.</li>
+<li>목소리가 밝지도 길지도 않다.</li>
+<li>살이 뼈를 옭아매지 못하여 발효시킨 밀가루 반죽처럼 늘어진다.</li>
+<li>몸이 여위어 살붙이[䐃肉]가 없다.</li>
+<li>몸에 아문 창[斂]·버짐[癬]·창(瘡)·옴[疥]이 있다.</li>
+<li>배에 감적(疳積)이 있다.</li>
+<li>목에 결핵(結核)이 있다.</li>
+<li>병을 앓은 뒤 원기(元氣)가 회복되지 않았다.</li>
+<li>본래 경간(驚癇)의 증이 있다.</li>
+<li>젖을 떼고 난 뒤이다.</li>
+<li>기혈(氣血)이 부족하다.</li>
+<li>비위(脾胃)가 허약하다.</li>
+<li>정신이 권태롭다.</li>
+<li>맥(脈)이 평화롭지 않다.</li>
+<li>이상은 모두 종두할 수 없다.</li>
+</ul>
+<p>〔원문〕凡小兒父母行事疏忽，不知調攝，不聽禁忌，不信醫藥，過於溺愛驕縱者，亦斷不可與種。</p>
+<p>무릇 소아의 부모가 행사를 소홀히 하여 조섭(調攝)할 줄 모르고, 금기를 듣지 않으며, 의약을 믿지 않고, 지나치게 귀여워하며 제멋에 내버려 두어 교종(驕縱)하게 하는 자도 역시 단연코 종두해 주어서는 안 된다.</p>
+
+</section>
+
+<section class="chapter" id="ch-10">
+  <div class="chapter-num">10 · 제10장</div>
+  <h1>水苗種法 · 수묘종법</h1>
+
+  
+<p class="lead">〔원문〕種痘之時，要細閱小兒氣血沖和，臟腑均平，內無痰熱食積所傷，外無六淫之氣相侵，方可用上好痘痂種之。一歲者用二十餘粒，三四歲者用三十餘粒，置於淨磁鍾內，以柳木作杵，碾為細末，以淨水滴三五點入鍾內。春溫用，冬熱用，乾則再加水幾點，總以調勻為度，不燥不濕。</p>
+<p>종두할 때에는 소아의 기혈(氣血)이 충화(沖和)하고 장부(臟腑)가 고르고 평안하여, 안으로 담열(痰熱)과 식적(食積)에 상한 바가 없고 밖으로 육음(六淫)의 기운이 침범한 바가 없는지를 자세히 살펴야 한다. 그런 뒤에야 상등 두가(痘痂)를 가지고 심을 수 있다. 한 살은 20여 알, 서너 살은 30여 알을 쓴다. 깨끗한 자기 잔[磁鍾]에 담고 버드나무로 공이를 만들어 곱게 가루 내며, 맑은 물을 세 점에서 다섯 점쯤 떨어뜨려 잔 안에 넣는다. 봄에는 따뜻한 물을 쓰고 겨울에는 뜨거운 물을 쓰며, 마르면 다시 물 몇 점을 더한다. 언제나 고루 개는 것을 기준으로 삼아 마르지도 축축하지도 않게 한다.</p>
+<p>〔원문〕用新棉些須攤極薄片，裹所調痘屑在內，捏成棗核樣，以紅線拴定，仍留寸許，長則剪去。將苗納入鼻孔，分男左女右。不可離人，時時看守。倘小兒用手拈弄，急禁止之；或被嚏出，急將苗塞鼻內，不可稍緩，恐泄苗氣。</p>
+<p>새 솜을 조금 아주 얇은 조각으로 펴서, 개어 놓은 두창 가루를 그 속에 싸고 대추씨 모양으로 빚어 붉은 실로 묶어 매되, 한 치쯤 남기고 길면 잘라 버린다. 묘(苗)를 콧구멍에 넣되 남자는 왼쪽, 여자는 오른쪽으로 나눈다. 사람을 떼어 놓지 말고 늘 지켜보아야 한다. 혹시 아이가 손으로 만지작거리면 급히 금지시키고, 혹 재채기로 나오면 급히 묘를 코 안에 도로 막아야 하니 조금도 늦추어서는 안 된다. 묘기(苗氣)가 새어 나갈까 염려해서이다.</p>
+<p>〔원문〕下苗後必以六個時辰為度，然後取出。如遇天氣嚴寒，多留數刻；若遇時令和暖，早取數刻亦可，要在臨時斟酌。</p>
+<p>묘를 넣은 뒤에는 반드시 여섯 시진(時辰)을 기준으로 삼아 그 뒤에 꺼낸다. 만일 날씨가 몹시 추우면 몇 각(刻)을 더 두고, 절기가 온화하고 따뜻하면 몇 각 일찍 꺼내도 역시 가하다. 요점은 그때그때 헤아리는 데 있다.</p>
+<p>〔원문〕痘苗取出之後，其苗氣漸次而入，傳遍五藏，至七日始發熱。發熱三日而苗見，見苗三日而出齊，出齊三日而灌漿，漿足三日而回水結痂，大功成矣。</p>
+<p>두묘(痘苗)를 꺼낸 뒤에는 그 묘기(苗氣)가 점차로 들어가 오장(五藏)에 두루 전하여 7일이 되어서야 비로소 발열한다. 발열한 지 3일에 묘(苗)가 나타나고, 묘가 나타난 지 3일에 다 나오며, 다 나온 지 3일에 관장(灌漿)하고, 장(漿)이 찬 지 3일에 회수(回水)하며 결가(結痂)하니 큰 공이 이루어진다.</p>
+
+</section>
+
+<section class="chapter" id="ch-11">
+  <div class="chapter-num">11 · 제11장</div>
+  <h1>五藏傳送之理 · 오장전송지리</h1>
+
+  
+<p class="lead">〔원문〕鼻者，肺之外竅也。水苗種法以苗塞鼻中，其氣先傳於肺，肺主皮毛；肺傳於心，心主血脈；心傳於脾，脾主肌肉；脾傳於肝，肝主筋；肝傳於腎，腎主骨。痘毒藏骨髓之內，感苗氣而發，其毒自骨髓盡達於筋，腎藏之毒解矣；自筋盡達於肌肉，肝藏之毒解矣；自肌肉盡達於血脈，脾藏之毒解矣；自血脈盡達於皮毛，心藏之毒解矣；自皮毛盡達於顆粒，肺藏之毒解矣。五藏之毒層遞而解，然後毒化漿成，收靨落痂。此種痘傳送之次序也，不可不知。</p>
+<p>코는 폐(肺)의 바깥 규(竅)이다. 수묘(水苗) 종법은 묘(苗)를 코 안에 막아 두는 것이니, 그 기운이 먼저 폐에 전해지는데 폐는 피모(皮毛)를 주관하고, 폐에서 심(心)에 전해지는데 심은 혈맥(血脈)을 주관하며, 심에서 비(脾)에 전해지는데 비는 기육(肌肉)을 주관하고, 비에서 간(肝)에 전해지는데 간은 근(筋)을 주관하며, 간에서 신(腎)에 전해지는데 신은 골(骨)을 주관한다. 두독(痘毒)은 골수(骨髓) 안에 갈무리되어 있다가 묘기(苗氣)에 감응하여 발하니, 그 독이 골수에서 근(筋)으로 다 미치면 신장(腎藏)의 독이 풀리고, 근에서 기육으로 다 미치면 간장(肝藏)의 독이 풀리며, 기육에서 혈맥으로 다 미치면 비장(脾藏)의 독이 풀리고, 혈맥에서 피모로 다 미치면 심장(心藏)의 독이 풀리며, 피모에서 두알[顆粒]로 다 미치면 폐장(肺藏)의 독이 풀린다. 오장의 독이 차례로 층층이 풀린 뒤에 독이 화(化)하여 장(漿)이 이루어지고 수엽(收靨)하며 낙가(落痂)한다. 이것이 종두의 전송(傳送) 차례이니 알아 두지 않을 수 없다.</p>
+
+</section>
+
+<section class="chapter" id="ch-12">
+  <div class="chapter-num">12 · 제12장</div>
+  <h1>旱苗種法 · 한묘종법</h1>
+
+  
+<p class="lead">〔원문〕旱苗種法，用銀管約長五六寸，曲其頸，碾痘痂極細，納於管端，按男左女右，對準鼻孔吹入之，至七日而亦發熱。今時多用此法，蓋取其簡便捷入，不致脫落而有透泄苗氣之患也。第恐後人用之不善，輕吹之則不驟入，重吹之則迅烈難當，且恐流涕過多，苗隨涕去，往往不驗。今欲垂法後世，當取其法之和平穩當、萬全者而則效之，此所以獨取於水苗也。</p>
+<p>한묘(旱苗) 종법은 은관(銀管)을 길이 다섯 치에서 여섯 치쯤 되게 쓰되 그 목을 구부리고, 두가(痘痂)를 지극히 곱게 갈아 관 끝에 넣고, 남자는 왼쪽 여자는 오른쪽으로 대어 콧구멍에 맞추어 불어넣는다. 7일이 되어서 역시 발열한다. 요즘은 대개 이 법을 쓰는데, 간편하고 빠르게 들어가 묘(苗)가 떨어져 나가 묘기(苗氣)가 새어 나가는 근심이 없음을 취한 것이다. 다만 후세 사람이 잘못 쓸까 염려되니, 가볍게 불면 갑자기 들어가지 않고, 세게 불면 심하고 급하여 당해 내기 어려우며, 또한 콧물이 너무 많이 흘러 묘가 콧물을 따라 나가 버려 흔히 효험이 없다. 이제 법을 후세에 전하고자 한다면 마땅히 그 법 가운데 온화하고 안정되어 만전한 것을 취하여 본받게 해야 할 것이니, 이것이 오직 수묘(水苗)만을 취하는 까닭이다.</p>
+
+</section>
+
+<section class="chapter" id="ch-13">
+  <div class="chapter-num">13 · 제13장</div>
+  <h1>痘衣種法 · 두의종법</h1>
+
+  
+<p class="lead">〔원문〕小兒出痘者，當長漿、漿足之時，則彼痘氣充盛，取其貼身裏衣，與未出痘之兒女服之，服二三日，夜間亦不脫下，至九日、十一日始發熱，此乃衣傳。然恐氣薄不透，多有不熱不出，其法不靈，故不可用。</p>
+<p>두창이 난 소아가 장(漿)이 자라고 장이 가득 찬 때에는 그 두기(痘氣)가 충성(充盛)하므로, 그 아이의 몸에 붙였던 속옷을 가져다 아직 두창이 나지 않은 아이에게 입힌다. 이삼 일을 입히되 밤에도 또한 벗지 않으며, 9일이나 11일이 되어서야 비로소 발열하는데, 이것이 바로 옷으로 전하는 것이다. 그러나 기운이 엷어 통하지 못할까 염려되니, 대개 열이 나지도 나오지도 않아 그 법이 영험하지 못하다. 그러므로 쓸 수 없다.</p>
+
+</section>
+
+<section class="chapter" id="ch-14">
+  <div class="chapter-num">14 · 제14장</div>
+  <h1>痘漿種法 · 두장종법</h1>
+
+  
+<p class="lead">〔원문〕擇小兒出痘之順者，取其痘漿，以棉拭之，分男左女右，塞入鼻中，亦能發痘。但取痘漿之時，不令本家知覺，捏破痘漿，盜以作種，使彼真氣宣泄，毒不能解，此忍心害理不仁之事也。同志者切宜深惡而痛絕之，又豈可尤而效之也哉。</p>
+<p>두창이 난 소아 가운데 순(順)한 자를 가려 그 두장(痘漿)을 취하여 솜으로 닦아 내고, 남자는 왼쪽 여자는 오른쪽으로 나누어 콧구멍에 막아 넣으면 역시 두창을 발하게 할 수 있다. 그러나 두장을 취할 때에 그 집에서 알아차리지 못하게 하고 두장을 짜부수어 훔쳐다 종자(種)로 삼으면, 그 아이로 하여금 진기(真氣)가 선설(宣泄)되어 독이 풀리지 못하게 하니, 이는 마음을 굳게 먹고 이치를 해치는 불인(不仁)한 일이다. 뜻을 같이하는 이는 모름지기 깊이 미워하고 통절히 끊어야 할 것이거늘, 어찌 또 그 허물을 본받아 따라 할 수 있겠는가.</p>
+
+</section>
+
+<section class="chapter" id="ch-15">
+  <div class="chapter-num">15 · 제15장</div>
+  <h1>信苗 · 신묘</h1>
+
+  
+<p class="lead">〔원문〕種痘發熱以前，小兒面部上忽出顆粒似痘，名曰信苗。此痘之將發，毒氣之標也。色紅而軟，聽之自消；若紅紫堅硬，有如魚目者，急以銀針挑破，上以二聖散則無虞。</p>
+<p>종두하여 발열하기 전에 아이의 얼굴 위에 갑자기 두창 같은 알갱이가 나는 것을 신묘(信苗)라 이름한다. 이는 두창이 장차 나려는 것이니 독기(毒氣)의 표지(標)이다. 색이 붉고 부드러우면 내버려 두어 저절로 사라지게 하고, 만일 붉고 자줏빛으로 단단하여 물고기 눈 같은 것이면 급히 은침(銀針)으로 찔러 터뜨리고 그 위에 이성산(二聖散)을 바르면 근심이 없다.</p>
+<p><strong>二聖散(이성산)</strong></p>
+<p>〔원문〕明雄黃、紫草(各等分)。共碾為細末，用油胭脂調上。</p>
+<p>명웅황·자초 각각 같은 분량. 함께 갈아 곱게 가루 내어 기름에 갠 연지에 개어 바른다.</p>
+
+</section>
+
+<section class="chapter" id="ch-16">
+  <div class="chapter-num">16 · 제16장</div>
+  <h1>補種 · 보종</h1>
+
+  
+<p class="lead">〔원문〕下苗後宜令親切之人左右看守，恐他人用心之不慎也。若視為泛常，看守疏忽，恐小兒惡其苗塞鼻中，不時捏出，使苗氣一泄，種多不驗，所以種而不發者亦有之也。</p>
+<p>묘(苗)를 넣은 뒤에는 마땅히 친절한 사람을 좌우에서 지켜보게 해야 하니, 다른 사람이 마음을 써서 삼가지 않을까 염려해서이다. 만일 예사로운 일로 여겨 지키는 것을 소홀히 하면, 아이가 묘가 코를 막은 것을 싫어하여 수시로 집어낼까 염려되니, 묘기(苗氣)가 한 번 새어 나가면 심어도 대개 효험이 없어서 심고도 나지 않는 자도 있게 된다.</p>
+<p>〔원문〕然或小兒五內壯實，不受苗氣，艱於傳進不發者亦有之；更有胎毒深邃，潛藏內蓄，雖苗氣傳至，不能引出不發者亦有之。俱當俟踰十一日為度，過此不發，然後察天時和順，再為補種亦可。</p>
+<p>그러나 혹 아이의 오내(五內)가 튼튼하고 실하여 묘기(苗氣)를 받아들이지 않아 전하여 들어가기 어려워 나지 않는 자도 있고, 다시 태독(胎毒)이 깊숙이 잠복해 안에 쌓여 있어 묘기(苗氣)가 전하여 이르렀다 해도 이끌어 내지 못하여 나지 않는 자도 있다. 모두 11일을 넘기기를 기다리는 것을 기준으로 삼아, 이보다 지나도 나지 않으면 그 뒤에 천시(天時)가 온화하고 순한지를 살펴 다시 보종(補種)해도 역시 가하다.</p>
+
+</section>
+
+<section class="chapter" id="ch-17">
+  <div class="chapter-num">17 · 제17장</div>
+  <h1>自出 · 자출</h1>
+
+  
+<p class="lead">〔원문〕種痘以七日為期，五藏傳遍始發熱者常也。或有至九日、十一日而發者，此傳送遲慢之故，亦無足慮。若發熱於五日以前，此時苗氣尚未傳至，其毒何由而發？必因種後適逢天行時氣，小兒感染而成，是乃自出之痘，非關苗氣引出者。種痘者不可不知，要當於未種之時預為申明其說焉。</p>
+<p>종두는 7일을 기한으로 삼아 오장(五藏)에 두루 전해진 뒤에야 비로소 발열하는 것이 상례이다. 혹 9일이나 11일이 되어서 발하는 자도 있으니, 이는 전송(傳送)이 더디고 느린 까닭이라 또한 염려할 것 없다. 만일 닷새 전에 발열하면 이때는 묘기(苗氣)가 오히려 전하여 이르지 못한 때인데 그 독이 무슨 까닭으로 발하겠는가. 반드시 심은 뒤에 마침 천행시기(天行時氣)를 만나 소아가 감염되어 이루어진 것이니, 이는 바로 스스로 나온 두창[自出之痘]이요 묘기(苗氣)가 이끌어 낸 것과는 관계가 없다. 종두하는 이는 알아 두지 않을 수 없으니, 마땅히 심지 않았을 때에 미리 그 말을 밝히고 일러 두어야 한다.</p>
+
+</section>
+
+<section class="chapter" id="ch-18">
+  <div class="chapter-num">18 · 제18장</div>
+  <h1>治法 · 치법</h1>
+
+  
+<p class="lead">〔원문〕種痘乃引毒達表，乘兒安寧無病之時，事屬順吉，又何言治？然恐痘家過於溺愛，起居不謹，飲食不節，此病所由生也，故治法亦所不免，當悉照治正痘之法治之可也。</p>
+<p>종두는 독(毒)을 이끌어 표(表)로 내보내는 것이니, 아이가 편안하고 병이 없을 때를 타서 하는 일이라 순(順)하고 길(吉)한 데 속하는데, 또한 어찌 치료를 말하겠는가. 그러나 두창을 앓는 집에서 지나치게 귀여워하여 기거를 삼가지 않고 음식을 절제하지 않으면 이로 말미암아 병이 생기니, 그러므로 치법(治法) 또한 면할 수 없다. 마땅히 모두 정두(正痘)를 치료하는 법에 비추어[照] 치료하면 가하다.</p>
+
+</section>
+
+</body>
+</html>
